@@ -19,6 +19,18 @@ export class ListaVehiculoComponent implements OnInit {
     });
   }
 
+  public get obtenerTotalVehiculosRenault(): number {
+    return this.listaVehiculos.filter(x => x.marca == "Renault").length;
+  }
+
+  public get obtenerTotalVehiculosChevrolet(): number {
+    return this.listaVehiculos.filter(x => x.marca == "Chevrolet").length;
+  }
+
+  public get obtenerTotalVehiculosNissan(): number {
+    return this.listaVehiculos.filter(x => x.marca == "Nissan").length;
+  }
+
   ngOnInit(): void {
     this.obtenerVehiculos();
   }

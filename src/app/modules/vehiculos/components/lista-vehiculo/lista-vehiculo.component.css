@@ -1,0 +1,7 @@
+table {
+    font-family: Inter, sans-serif;
+}
+
+thead {
+    --bs-table-bg: #333A40;
+}
